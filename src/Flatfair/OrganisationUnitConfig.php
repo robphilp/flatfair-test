@@ -7,15 +7,16 @@ class OrganisationUnitConfig
     /** @var bool */
     private $hasFixedMembershipFee;
 
-    /** @var int */
-    private $fixedMemberShipFeeAmount;
+    /** @var int|null */
+    private $fixedMemberShipFeeAmount = null;
 
     /**
      * OrganisationUnitConfig constructor.
+     *
      * @param bool $hasFixedMembershipFee
-     * @param int $fixedMemberShipFeeAmount
+     * @param int|null $fixedMemberShipFeeAmount
      */
-    public function __construct($hasFixedMembershipFee, $fixedMemberShipFeeAmount)
+    public function __construct(bool $hasFixedMembershipFee, ?int $fixedMemberShipFeeAmount = null)
     {
         $this->hasFixedMembershipFee    = $hasFixedMembershipFee;
         $this->fixedMemberShipFeeAmount = $fixedMemberShipFeeAmount;

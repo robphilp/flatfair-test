@@ -4,7 +4,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Flatfair\\": "src/"
+            "Flatfair\\": "src/Flatfair/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flatfair\\Tests\\": "tests/"
         }
     }
 }
